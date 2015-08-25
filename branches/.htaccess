@@ -1,0 +1,27 @@
+# Turn on URL rewriting
+RewriteEngine On
+
+# Installation directory
+# Put your installation directory here:
+# If your URL is www.example.com/, use /
+# If your URL is www.example.com/kohana/, use /kohana/
+
+RewriteBase /
+
+# Protect hidden files from being viewed
+#<Files .*>
+#	Order Deny,Allow
+#	Deny From All
+#</Files>
+
+# Protect application and system files from being viewed
+RewriteRule ^(?:application|modules|system)\b.* index.php/$1 [PT,L]
+
+# Do not enable rewriting for files or directories that exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# For reuests that are not actual files or directories,
+# Rewrite to index.php/URL
+RewriteRule ^(.*)$ index.php/$1 [PT,L]
+

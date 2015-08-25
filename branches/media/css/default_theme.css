@@ -1,0 +1,341 @@
+/* 
+    Document   : default_theme
+    Created on : 05/11/2010, 10:04:09 AM
+    Author     : Emmanuel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/********************************************
+        Styles for view/private/private_zone
+*********************************************/
+
+root { 
+    display: block;
+}
+
+body{
+    font-family:"Verdana","Arial","Helvetica";
+    font-size: medium;
+}
+
+.private_zone_bg{
+    position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 0;
+}
+
+.private_zone_content{
+    position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1;
+}
+
+.private_zone_content_lock{
+    position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2;
+}
+
+.private_zone_form{
+    position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 3;
+}
+
+.private_zone_translate{
+    position: absolute; right: 0px; padding-right: 15px; padding-left: 15px; margin-top: 10px;
+    -moz-border-radius: 4px 0px 0px 4px;
+    background-image: url('../images/mini_bg.png');
+    background-repeat: repeat;
+    color: white;
+    font-size: medium;
+    width: 270px;
+}
+
+.language_label{
+    display: block;
+    float: left;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+/********************************************
+        Styles for view/private/admin
+*********************************************/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#admin_bg{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: #5C5C5C;
+}
+
+div#header{
+    background: url('../images/admin_header.png');
+    /*min-height: 78px;
+    height: 9%;*/
+    height: 78px;
+}
+
+#admin_mini_logo{
+    display: block;
+    float: left;
+    border: white none none;
+}
+
+div#wrapper {
+    background:url('../images/bg_menu.png') repeat scroll 0 0 transparent;
+    border:1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    width:100%;
+    /*min-height:30px;
+    height: 4%;*/
+    height: 30px;
+}
+
+div#content {
+    background-color:#5C5C5C;
+    /*min-height: 441px;
+    height:85%;
+    height:75%;*/
+
+    overflow:auto;
+    width:100%;
+    top: 110px;
+    bottom: 34px;
+    position: fixed;
+}
+
+div#subcontent{
+    background:url('../images/bg.jpg') repeat scroll 0 0 transparent;
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
+    color:#FFFFFF;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-size:11px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0;
+    padding:1% 1% 3px;
+    width:95%;
+    height: 97%;
+}
+
+div#dynamic_content{
+    display: inline-block;
+    /*min-height: 500px;*/
+
+    width: 100%;
+}
+div#subfooter {
+    background-color:#CCCCCC;
+    border:1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    color:black;
+    font-size:12px;
+    padding-top:10px;
+    text-align:right;
+    width:100%;
+    position: fixed;
+    bottom: 0px;
+    /*min-height: 22px;
+    height: 2%;*/
+    height: 22px;
+}
+/*
+div#loader{
+    z-index: 100; display:none; color:white; font-family: Verdana; font-size: 20px; background-color: black; opacity:.8; position: absolute;  top:110px; left:0px; width: 100%; height: 77%;
+
+}
+
+div#loaderImg{
+    height: 20px; width: 20%; margin-left: 45%; margin-right: 40%; margin-top: 6%;
+}
+
+span#pb1{
+    height: 20px; width: 310px; margin: 0 auto; display: block;
+}*/
+
+div#sessionActions{
+    text-align: right;
+    position:absolute;
+    right:0px;
+    font-size:small;
+    color:white;
+    min-width: 281px;
+    background-image:url('../images/mini_bg.png');
+    padding:3px;
+    padding-right: 15px;
+    -moz-border-radius:3px 0px 0px 3px;
+    margin-top:48px;
+}
+a#accountInfo{
+    cursor: pointer; padding-right: 15px; padding-left: 10px; font-weight:bold;
+}
+a#logout{
+    cursor: pointer; font-weight:bold;text-decoration: none; color: white;
+}
+
+a#logout:hover{
+    color: #FF8B32;
+}
+
+a#logout img{
+    border: none;
+}
+
+.open_node{
+    background-image: url('../images/folder_closed.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    float: left;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.close_node{
+    background-image: url('../images/folder_open.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    float: left;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.disable_node{
+    background-image: url('../images/folder_disabled.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    float: left;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.php_action_node{
+    background-image: url('../ico/php.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    float: left;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#errorMessages{
+    max-width: 300px;
+    min-width: 300px;
+    right: 20px;
+    bottom: 5px;
+    position: absolute;
+    z-index: 5000;
+    display: none;
+
+}
+
+#errorMessages .header{
+    background:url('../css/msg_img/gritter.png') no-repeat left -30px;
+    height:10px;
+}
+#errorMessages .content{
+    background:url('../css/msg_img/gritter.png') no-repeat left -40px;
+    min-height: 50px; padding-left: 5px; padding-top: 5px;
+}
+
+#errorMessages .content .img{
+    float: left;
+}
+#errorMessages .content .text .title{
+    padding-left: 53px; font-size: 1.4em; font-weight: bold;
+}
+#errorMessages .content .text .message{
+    padding-left: 53px; padding-top: 2px; padding-bottom: 2px;
+}
+
+#errorMessages .content .text .message p{
+    padding-right: 5px;
+}
+
+#errorMessages .footer{
+    width: 100%;background:url('../css/msg_img/gritter.png') no-repeat left bottom;
+    height:8px;
+    margin:0;
+}
+
+.check_true{
+    display: block;
+    background:url('../ico/access_granted.png') no-repeat center;
+    cursor: pointer;
+    min-width: 16px;
+    min-height: 16px;
+    border: none;
+    margin: 0 auto;
+
+}
+
+.check_false{
+    display: block;
+    background:url('../ico/access_denied.png') no-repeat center;
+    cursor: pointer;
+    min-width: 16px;
+    min-height: 16px;
+    border: none;
+    margin: 0 auto;
+
+}
+
+.label_privilege{
+    min-width: 120px;
+    max-width: 120px; display: inline-block; padding-left: 5px; padding-right: 5px; white-space: pre-wrap;
+    text-align: center;
+}
+
+.debug_div{
+    background:url('../images/mini_bg.png');
+    -moz-border-radius: 2px;
+    position: absolute;
+    z-index: 10000;
+    min-width: 90%;
+    margin-left: 5%;
+    min-height: 450px;
+    max-height: 550px;
+    color: white;
+    top: 13%;
+    padding: 10px;
+    overflow: auto;
+}
+
+.access_denied_meesage{
+    background:url('../images/mini_bg.png');
+    -moz-border-radius: 3px;
+    width: 450px;
+    padding: 10px;
+    padding-left: 50px;
+    font-size: large;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    display: table;
+}
+.access_denied_meesage img{
+    float: left;
+}
+
+.access_denied_meesage p{
+    margin-top: 5%;
+}

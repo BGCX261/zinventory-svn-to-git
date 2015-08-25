@@ -1,0 +1,147 @@
+/*  Estilos globales Formularios */
+input:focus, textarea:focus, label:focus, select:focus {
+    border: 1px solid black;
+    background-color: #ffffff;
+}
+input, textarea,select {
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+    padding: 2px;
+    border: 1px solid #666666;
+    background-color: #DADCFF;
+}
+select{
+    cursor:pointer;
+}
+input.blur,select.blur {
+    color:#666666;
+    border: 2px double black;
+}
+label {
+    display:block;
+    font-weight:bold;
+}
+fieldset
+{
+    border: 1px solid black;
+    padding:12px;
+}
+legend
+{
+    color:black;
+    font-size:17px;
+    font-weight:bold;
+    padding: 3px;
+}
+
+/*  Estilos globales validaciones  */
+em.error {
+    background:url("../images/unchecked.png") no-repeat 0px 0px;
+    font-size:10px;
+    color : red;
+    padding-left: 16px;
+    margin-left: 5px;
+    width: 200px;
+    padding-left: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+    position: relative;
+}
+em.success {
+    background:url("/application/media/images/checked.png") no-repeat 0px 0px;
+    font-size:11px;
+    padding-left: 16px;
+    color : maroon;
+    margin-left: 5px;
+    border:0px;
+}
+.fg-button {
+    outline: 0;
+    margin:0 4px 0 0;
+    padding: .4em 1em;
+    text-decoration:none !important;
+    cursor:pointer;
+    text-align: center;
+    zoom: 1;
+}
+.frmlbl
+{
+    width:130px;
+    display:block;
+    float:left;
+    padding-top:5px;
+}
+.frmlblarge
+{
+    width:150px;
+    display:block;
+    float:left;    
+
+}
+.frmlblshort
+{
+    width:70px;
+    display:block;
+    float:left;
+}
+
+.titleTables
+{
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom: 10px;
+}
+.alignleft
+{
+    text-align:left;
+
+}
+.aligncenter
+{
+    text-align:center;
+}
+.alignright
+{
+    text-align:right;
+}
+#previo
+{
+    display:none;
+    float:left;
+    margin-top:7px;
+}
+
+/*
+    IBUS+
+*/
+.label_output div{
+    display: table;
+    margin: 1px;
+}
+
+.label_output div label{
+    display: table-row;
+    float: left;
+    max-width: 150px;
+    min-width: 150px;
+    text-align: right;
+    white-space: pre-line;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.label_output div *{
+    /*display: table-row;*/
+    max-width: 180px;
+    float: right;
+    /*padding: 3px;*/
+    font-weight: normal;
+}
+
+.validation_error{
+    background-color: #ff7a7a;
+}
+.validation_success{
+    background-color: #7eff7a;
+}
